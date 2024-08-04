@@ -13,7 +13,6 @@
 // }
 
 
-
 // const ayaz = new Person('Ayaz','Ibrahimov',1998)
 // const asef = new Person('Asef','Ibrahimov',2002)
 

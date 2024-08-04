@@ -205,7 +205,51 @@
 
 
 
+class Person{
 
+    constructor(name,age){
+        this.name = name;
+        this.age = age
+    }
+
+
+    calcAge(){
+        console.log(2024 - this.age);
+    }
+
+
+    calcAnnualSalary(){
+        console.log(this.salary*12);
+    }
+
+}
+
+
+
+class Student extends Person{
+
+    constructor(name,age,salary){
+        //super will be first
+        super(name,age)
+        this.salary = salary
+    }
+
+    fullName(){
+        console.log(this.name + " " + 'Ibrahimov');
+    }
+
+}
+
+
+const ayaz = new Student('Ayaz', 26, 2500)
+
+ayaz.fullName()
+ayaz.calcAge()
+ayaz.calcAnnualSalary()
+
+
+
+console.log(ayaz);
 
 
 
